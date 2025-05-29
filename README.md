@@ -35,6 +35,10 @@ Current directory is mounted on /home/oracle/work in the container.
 ```bash
 podman exec -it oml4py-db bash
 ```
+or run work/config-oml4py.sh (Step 5)
+```bash
+podman exec oml4py-db sh ./work/config-oml4py.sh <passowrd for oml_user>
+```
 
 ## Step 5: run configuration script
 
