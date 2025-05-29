@@ -25,7 +25,7 @@ podman run -d --name oml4py-db -p 1521:1521 -v $PWD:/home/oracle/work container-
 
 Current directory is mounted on /home/oracle/work in the container.
 
-## Step 4: connect the running container
+## Step 4: connect to the running container
 
 ```bash
 podman exec -it oml4py-db bash
