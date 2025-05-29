@@ -28,7 +28,7 @@ Current directory is mounted on /home/oracle/work in the container.
 ## Step 4: connect the running container
 
 ```bash
-podman exect -it oml4py-db bash
+podman exec -it oml4py-db bash
 ```
 
 ## Step 5: run configuration script
