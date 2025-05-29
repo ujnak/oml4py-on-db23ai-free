@@ -18,8 +18,13 @@ https://www.oracle.com/database/technologies/oml4py-downloads.html
 
 ## Step 3: create and run Oracle Database Free 23ai container
 
+download latest Oracle Database Free 23ai container image.
 ```bash
 podman pull container-registry.oracle.com/database/free:latest
+```
+Create and run oracle database free container - oml4py-db
+
+```bash
 podman run -d --name oml4py-db -p 1521:1521 -v $PWD:/home/oracle/work container-registry.oracle.com/database/free:latest
 ```
 
