@@ -96,6 +96,8 @@ export LD_LIBRARY_PATH=$PYTHONHOME/lib:$ORACLE_HOME/lib:$LD_LIBRARY_PATH
 # Configure OML4Py Server 
 cd $ORACLE_HOME/oml4py/server
 sqlplus / as sysdba <<EOF
+spool install_root.txt
+@pyqcfg.sql SYSAUX TEMP /opt/oracle/product/23ai/dbhomeFree/python
 spool install_pdb.txt
 alter session set container=FREEPDB1;
 @pyqcfg.sql SYSAUX TEMP /opt/oracle/product/23ai/dbhomeFree/python
